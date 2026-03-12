@@ -452,18 +452,13 @@ display:flex;
 justify-content:center;
 gap:40px;
 margin-top:40px;
+}
 
-}.produtos-grid{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-margin-top:40px;
-}.produtos-grid{
+.produtos-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
 gap:40px;
-max-width:1200px;
+max-width:1000px;
 margin:auto;
 padding:40px;
 }
@@ -491,7 +486,13 @@ transition:0.2s;
 background:#c70101;
 
 }
-
+.card-camisa img{
+width:100%;
+height:320px;
+object-fit:contain;
+border-radius:8px;
+transition:0.25s;
+}
 .galeria{
 flex:1;
 }
