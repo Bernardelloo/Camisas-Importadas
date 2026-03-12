@@ -397,4 +397,42 @@ background-position:center;
 
 color:white;
 text-align:center;
+}.produtos{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+margin-top:40px;
+}
+
+.produto{
+width:220px;
+background:white;
+border-radius:12px;
+text-decoration:none;
+color:black;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+padding:15px;
+transition:0.3s;
+}
+
+.produto img{
+width:100%;
+height:220px;
+object-fit:contain;
+}
+
+.produto h3{
+font-size:18px;
+margin:10px 0 5px;
+}
+
+.preco{
+font-weight:bold;
+color:#25D366;
+}
+
+.produto:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.25);
 }
