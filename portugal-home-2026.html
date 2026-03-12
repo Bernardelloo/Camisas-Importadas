@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <title>Portugal Home 2026</title>
@@ -10,74 +11,93 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background:#f5f5f5;
+    background:#f2f2f2;
     margin:0;
-    padding:0;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
 }
 
 .produto{
-    max-width:1000px;
-    margin:60px auto;
     display:flex;
-    gap:60px;
+    flex-wrap:wrap;
+    gap:50px;
     background:white;
     padding:40px;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.produto img{
-    width:350px;
+.imagem{
+    flex:1;
+    text-align:center;
+}
+
+.imagem img{
+    width:100%;
+    max-width:400px;
 }
 
 .info{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+    flex:1;
 }
 
 h1{
+    margin-top:0;
     font-size:32px;
-    margin:0;
-}
-
-.preco{
-    font-size:28px;
-    font-weight:700;
-    color:#111;
 }
 
 .descricao{
     color:#666;
+    margin-bottom:20px;
 }
 
-select{
-    padding:10px;
-    width:120px;
-    border-radius:6px;
+.preco{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.tamanhos{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.tamanhos button{
     border:1px solid #ccc;
+    background:white;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:500;
 }
 
-.botao{
-    margin-top:20px;
+.tamanhos button:hover{
+    border:1px solid black;
 }
 
-.botao a{
+.comprar{
+    display:inline-block;
     background:#25D366;
     color:white;
+    padding:16px 30px;
+    border-radius:10px;
     text-decoration:none;
-    padding:14px 28px;
-    border-radius:8px;
-    font-weight:500;
+    font-weight:600;
+    font-size:18px;
     transition:0.2s;
 }
 
-.botao a:hover{
+.comprar:hover{
     background:#1ebe5d;
 }
 
 .voltar{
-    margin:30px;
+    margin-bottom:20px;
 }
 
 .voltar a{
@@ -91,20 +111,24 @@ select{
 
 <body>
 
+<div class="container">
+
 <div class="voltar">
 <a href="home.html">⬅ Voltar</a>
 </div>
 
 <div class="produto">
 
+<div class="imagem">
 <img src="img/selecoes/portugal/portugal_home_2026_1.png">
+</div>
 
 <div class="info">
 
 <h1>Portugal Home 2026</h1>
 
 <p class="descricao">
-Camisa versão torcedor importada.
+Camisa versão torcedor importada.  
 Alta qualidade, escudo bordado e tecido respirável.
 </p>
 
@@ -112,19 +136,20 @@ Alta qualidade, escudo bordado e tecido respirável.
 R$129
 </div>
 
-<label>Tamanho:</label>
+<p><strong>Tamanhos disponíveis:</strong></p>
 
-<select>
-<option>P</option>
-<option>M</option>
-<option>G</option>
-<option>GG</option>
-</select>
+<div class="tamanhos">
+<button>P</button>
+<button>M</button>
+<button>G</button>
+<button>GG</button>
+</div>
 
-<div class="botao">
-<a href="https://wa.me/5511957944391?text=Olá!%20Tenho%20interesse%20na%20camisa%20Portugal%20Home%202026">
+<a class="comprar"
+href="https://wa.me/5511957944391?text=Olá!%20Quero%20a%20camisa%20Portugal%20Home%202026">
 Comprar no WhatsApp
 </a>
+
 </div>
 
 </div>
