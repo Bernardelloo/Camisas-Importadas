@@ -6,54 +6,48 @@ margin:0;
 padding:0;
 }
 
-body{
-font-family:'Poppins', sans-serif;
-background:#f4f4f4;
-text-align:center;
+body {
+    margin: 0;
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
 
-.navbar{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:12px 40px;
-
-background:rgba(0,0,0,0.85);
-backdrop-filter:blur(6px);
-
-z-index:1000;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
 }
 
-.logo{
-color:white;
-font-size:20px;
-font-weight:700;
+.logo {
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.menu{
-display:flex;
-gap:30px;
-list-style:none;
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-.menu a{
-color:white;
-text-decoration:none;
-font-size:15px;
-font-weight:500;
-transition:0.2s;
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-.menu a:hover{
-color:#25D366;
+.menu a:hover {
+    color: #25D366;
 }
 
 /* BANNER HOME */
@@ -226,60 +220,104 @@ text-align:center;
 
 /* PAGINA PRODUTO */
 
-.produto-container{
-display:flex;
-gap:50px;
-padding:40px;
-max-width:1100px;
-margin:auto;
-flex-wrap:wrap;
+.rodape-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
-.galeria{
-flex:1;
+.galeria img {
+    width: 400px;
+    border-radius: 10px;
 }
 
-#imagem-principal{
-width:100%;
-max-width:420px;
+.miniaturas img {
+    width: 70px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-.miniaturas{
-display:flex;
-gap:10px;
-margin-top:15px;
+.miniaturas img:hover {
+    transform: scale(1.1);
 }
 
-.miniaturas img{
-width:80px;
-cursor:pointer;
-border:2px solid transparent;
+.info-produto {
+    max-width: 400px;
 }
 
-.miniaturas img:hover{
-border:2px solid #000;
+.info-produto h1 {
+    font-size: 26px;
 }
 
-.info-produto{
-flex:1;
-text-align:left;
+.preco {
+    font-size: 28px;
+    color: #2ecc71;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.preco{
-font-size:26px;
-font-weight:700;
-margin:20px 0;
-color:#25D366;
+.descricao {
+    color: #555;
+    margin-bottom: 20px;
 }
 
-.botao-comprar{
-background:#25D366;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:6px;
-font-weight:600;
-display:inline-block;
+.botao-comprar {
+    display: block;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.botao-comprar:hover {
+    background: #1ebe5d;
+}
+
+.beneficios p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.detalhes {
+    margin-top: 10px;
+    padding-left: 18px;
+    color: #444;
+}
+.botao-comprar:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+}ul {
+    padding-left: 20px;
+    color: #444;
+}
+
+li {
+    margin-bottom: 5px;
+}.selos p {
+    margin: 5px 0;
+    color: #333;
 }
 
 /* WHATSAPP */
@@ -347,4 +385,68 @@ padding: 10px;
 }.carousel{
 display: flex;
 overflow: hidden;
+}
+ /* RODAPE */
+.rodape {
+    width: 100%;
+    background: #0a0a0a;
+    color: white;
+    margin-top: 80px;
+    padding: 50px 0;
+}
+
+.rodape-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+    flex-wrap: wrap; /* IMPORTANTE */
+}
+
+.coluna {
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape-bottom {
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .produto-container {
+        flex-direction: column;
+        margin: 100px 15px 40px;
+        padding: 20px;
+    }
+
+    .galeria img {
+        width: 100%;
+    }
+
+    .info-produto {
+        max-width: 100%;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
 }
